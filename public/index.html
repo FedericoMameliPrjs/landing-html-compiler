@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#de5c00">
+  <title>Enel special 20</title>
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,900&display=swap" rel="stylesheet">
+
+  <!--style-->
+  <link rel="stylesheet" href="/public/style.dev.css">
+  <style>
+
+    .header__bg{
+      background-image: url("/public/mobile-bg.png");
+      background-size: 170%;
+      background-position: top;
+    }
+
+    @media screen and (min-width: 576px){
+      .header__bg{background-size: 130%;}
+    }
+
+    @media screen and (min-width: 768px){
+      .header__bg{background-size: 100%;}
+    }
+
+    @media screen and (min-width: 992px){
+      .header__bg{
+        background-image: url("/public/foto-bg.png");
+        background-size: cover;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <section class="brands">
+    <div class="brands__wrap container">
+      <div class="brands__logo">
+        <img src="https://livelanding.prezzogiusto.com/cdn/Enel_tool.png" alt="logo Enel">
+      </div>
+
+      <div class="brands__logo">
+        <picture>
+          <source media="screen and (min-width: 768px)" srcset="https://livelanding.prezzogiusto.com/cdn/PG_LOGO3.png">
+          <source media="screen and (max-width: 767px)" srcset="https://livelanding.prezzogiusto.com/cdn/volpina.png">
+          <img src="https://livelanding.prezzogiusto.com/cdn/volpina.png" alt="logo prezzogiusto">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <header class="header header__bg">
+    <div class="container">
+      <div class="header__content">
+        <h1 class="header__title">
+          <span class="header__title--small mb-3">fino al 19 dicembre</span>
+          20% di sconto
+        </h1>
+        <div class="header__subtitle">
+          sul prezzo della componente energia e
+          materia prima gas per i primi 12 mesi
+        </div>
+
+        <div class="flag">
+          <div class="flag__icon pg-bg--green">
+            <img src="/public/gift.png" class="img-fluid" alt="">
+          </div>
+          <div class="flag__text text-uppercase">
+            <strong>In omaggio 1 anno <br> di assistenza enel x h24</strong>
+          </div>
+        </div>
+
+      </div>
+      <div class="header__cmb">
+        <div class="callme-back pg-shadow pg-rounded-md">
+          <h3 class="callme-back__title text-center">
+            <span class="d-inline-block d-md-none">Vuoi avere maggiori informazioni?</span>
+            <span class="d-none d-md-inline-block">Scopri di più su questa offerta con un nostro consulente</span>
+          </h3>
+          <form class="cmb callme-back__form">
+            <div class="form-group">
+              <input type="tel" class="form-control text-center" name="phone" placeholder="Inserisci il tuo numero di cellulare">
+              <div class="error-helper"></div>
+            </div>
+            <div class="form-group">
+              <div class="privacy">
+                <div class="privacy__block">
+                  Richiedendo il servizio confermo di aver letto i
+                  <a href="https://www.prezzogiusto.com/termini-e-condizioni" target="_blank" rel="norefferer">
+                    Termini e Condizioni del Sito</a> e la
+                  <a href="https://www.prezzogiusto.com/privacy" target="_blank" rel="norefferer">Privacy Policy del
+                    Sito</a>
+                </div>
+
+                <div class="privacy__block">
+                  <label class="custom-checkbox" for="header-cmb-privacy">
+                    <input type="checkbox" id="header-cmb-privacy" name="privacy_3">
+                    <div class="checkbox">
+                      <div class="checkbox__inner bg-transparent">
+                        <svg class="svg-icon">
+                          <use xlink:href="./font-awesome-icons-solid.svg#check"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Acconsento al trattamento dei miei dati personali per attività di marketing</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-0">
+              <button class="btn btn-tertiary btn-block text-uppercase font-weight-bold text-white">
+                Chiamami gratis
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main main--up">
+
+    <section class="benefits">
+      <div class="container">
+        <h3 class="benefits__title">
+          Con Luce 20 Special e Gas 20 Special hai:
+        </h3>
+        <ul class="benefits__list">
+          <li class="benefits-item">
+            <div class="benefits-item__icon" data-toggle="modal" data-target="#leadModal">
+              <img src="/public/wallet.png" alt="sconto energia 20%">
+            </div>
+
+            <div class="benefits-item__content">
+              <h3 class="benefits-item__title">
+                Sconto del 20%
+              </h3>
+
+              <div class="benefits-item__description">
+                Su componente energia e materia prima gas per i primi 12 mesi di fornitura
+              </div>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-item__icon" data-toggle="modal" data-target="#leadModal">
+              <img src="/public/star.png" alt="Assistenza enel x">
+            </div>
+
+            <div class="benefits-item__content">
+              <h3 class="benefits-item__title">
+                Assistenza Enel X
+              </h3>
+
+              <div class="benefits-item__description">
+                Accesso 24 ore su 24, 7 giorni su 7 ad una una rete di tecnici specializzati
+              </div>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-item__icon" data-toggle="modal" data-target="#leadModal">
+              <img src="/public/pc.png" alt="bolletta online">
+            </div>
+
+            <div class="benefits-item__content">
+              <h3 class="benefits-item__title">
+                Scegli tu la bolletta
+              </h3>
+
+              <div class="benefits-item__description">
+                Hai a disposizione due opzioni: bolletta online o cartacea: scegli tu!
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--offer-box-->
+    <section class="offers">
+      <div class="container">
+        <div class="offer-box">
+          <div class="offer-box__content bg-success">
+            <h3 class="offer-box__title">Luce 20 Special</h3>
+            <div class="offer-box__price">
+              <span class="enelLuce20Special">0,321</span> €/kWh
+            </div>
+            <div class="offer-box__info">(IVA e imposte escluse)</div>
+          </div>
+          <div class="offer-box__cta">
+            <div class="d-inline-block offer-box__subtitle">e sconto del 20% i primi 12 mesi
+              <button class="btn btn-success btn-lg btn-block"
+                      data-cmb-from="offer" data-offer-type="luce"
+                      data-toggle="modal" data-target="#leadModal">scopri di più</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="offer-box">
+          <div class="offer-box__content bg-primary">
+            <h3 class="offer-box__title">Gas 20 Special</h3>
+            <div class="offer-box__price">
+              <span class="enelLuce20Special">0,123</span> €/Smc
+            </div>
+            <div class="offer-box__info">(IVA e imposte escluse)</div>
+          </div>
+          <div class="offer-box__cta">
+            <div class="d-inline-block offer-box__subtitle">e sconto del 20% i primi 12 mesi
+              <button class="btn btn-primary btn-lg btn-block"
+                      data-cmb-from="offer" data-offer-type="gas"
+                      data-toggle="modal" data-target="#leadModal">scopri di più</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="callme-back mt-5">
+        <h3 class="callme-back__title text-center">
+          Hai bisogno di aiuto?
+        </h3>
+        <div class="callme-back__description text-center">
+          Inserisci il tuo numero e ti richiameremo senza impegno
+        </div>
+        <form class="cmb callme-back__form callme-back__form--horizontal-flow">
+          <div class="form-group">
+            <input type="tel" class="form-control form-control-lg text-center" name="phone"
+                   placeholder="Inserisci il tuo numero di cellulare">
+            <div class="error-helper"></div>
+          </div>
+          <div class="form-group">
+            <div class="privacy">
+              <div class="privacy__block">
+                Richiedendo il servizio confermo di aver letto i
+                <a href="https://www.prezzogiusto.com/termini-e-condizioni" target="_blank" rel="norefferer">
+                  Termini e Condizioni del Sito</a> e la
+                <a href="https://www.prezzogiusto.com/privacy" target="_blank" rel="norefferer">Privacy Policy del
+                  Sito</a>
+              </div>
+
+              <div class="privacy__block">
+                <label class="custom-checkbox" for="mobile-cmb-privacy">
+                  <input type="checkbox" id="mobile-cmb-privacy" name="privacy_3">
+                  <div class="checkbox">
+                    <div class="checkbox__inner bg-transparent">
+                      <svg class="svg-icon">
+                        <use xlink:href="./font-awesome-icons-solid.svg#check"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>Acconsento al trattamento dei miei dati personali per attività di marketing</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <button class="btn btn-tertiary btn-lg btn-block text-uppercase text-white font-weight-bold">
+              Chiamami gratis
+              <svg class="svg-icon">
+                <use xlink:href="./font-awesome-icons-solid.svg#chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="https://livelanding.prezzogiusto.com/cdn/logo_pg_footer.png" alt="logo prezzogiusto">
+      </div>
+      <div class="footer__copy">
+        © Questa è un'offerta di Prezzogiusto - Agenzia Autorizzata <br>
+        PREZZOGIUSTO è un servizio offerto da SMART CONTACT SRL • P.IVA 03692630928
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- MODALS -->
+  <div class="modal fade" id="leadModal" tabindex="-1" role="dialog" aria-labelledby="leadModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title text-center" id="leadModalLabel">
+            Vuoi avere maggiori informazioni?
+          </h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-description">
+            Un consulente ti contatterà per fornirti tutte le informazioni necessarie gratis
+          </p>
+
+          <div class="callme-back">
+            <form class="cmb">
+              <div class="form-group">
+                <input type="tel" class="form-control form-control" placeholder="Inserisci il numero di cellulare" name="phone">
+                <span class="error-helper"></span>
+              </div>
+              <div class="form-group">
+                <div class="privacy">
+                  <div class="privacy__block">
+                    Richiedendo il servizio confermo di aver letto i
+                    <a href="https://www.prezzogiusto.com/termini-e-condizioni" target="_blank" rel="norefferer">
+                      Termini e Condizioni del Sito</a> e la
+                    <a href="https://www.prezzogiusto.com/privacy" target="_blank" rel="norefferer">Privacy Policy del Sito</a>
+                  </div>
+
+                  <div class="privacy__block">
+                    <label class="custom-checkbox" for="express-privacy3">
+                      <input type="checkbox" id="express-privacy3" name="privacy_3">
+                      <div class="checkbox">
+                        <div class="checkbox__inner bg-transparent">
+                          <svg class="svg-icon">
+                            <use xlink:href="./font-awesome-icons-solid.svg#check"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span>Acconsento al trattamento dei miei dati personali per attività di marketing</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block text-uppercase">Ti chiamiamo noi</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=es2015%2Ces2016%2CNodeList.prototype.forEach%2Cfetch"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://livelanding.prezzogiusto.com/cdn/costruttoreOfferte.js"></script>
+
+<script src="https://landingjs.prezzogiusto.com/media/landingjs_test/landing-utils-0.4.6.min.js"></script>
+<script src="https://landingjs.prezzogiusto.com/media/landingjs_test/landing-0.5.1.min.js"></script>
+<script src="https://landingjs.prezzogiusto.com/media/landingjs_test/app-form-0.3.2.min.js"></script>
+
+<script>
+  //modals event handlers
+  $('#leadModal').on('show.bs.modal', onShowLeadModal);
+  $('#leadModal').on('hidden.bs.modal', onHiddenLeadModal);
+
+
+  //landing handler
+  var landing = new Landing({
+    landingName: 'enel offerte',
+    sap: 'prezzogiusto_enel_({ f5 })',
+    params: {
+      suffix: {value: '{{ suffix }}', default: ''},
+      f5: {value: '{{ f5 }}', default: 'sem'},
+      f11: {value: '{{ f11 }}', default: 'enel-nomatch'},
+      f12: {value: getUrlParam('keyword') || 0},
+      f13: {value: getUrlParam('matchtype') || 0},
+      f14: {value: getUrlParam('creative') || 0},
+      f15: {value: '{{ f15 }}', default: ''}
+    },
+    defaultLeadData: function () {
+      return {
+        privacy_1: 1,
+        buyer: 'Enel',
+        category: this.params.f5,
+        name: 'Enel',
+        surname: this.params.f5,
+        offer: 'enel - Luce e Gas Special 20'
+      }
+    }
+  });
+
+  if(landing.getParam('suffix'))
+    landing.setLeadDataParam('sap', 'prezzogiusto_enel_({ f5 })_({ suffix })');
+
+  landing.addOtherDataParam('idorigine', getUrlParam('gclid'));
+  landing.addOtherDataParam(['f5', 'f11', 'f12', 'f13', 'f14', 'f15']);
+
+
+  var form = new AppForm({
+    formSelector: '.cmb',
+    fields: {
+      phone: {
+        errorMessage: 'Inserisci il tuo numero di cellulare corretto',
+        validation: validations.mobile_phone()
+      },
+      privacy_3: {
+        parser: function (value){
+          return value ? 1 : 0;
+        }
+      }
+    }
+  });
+
+  form.submit(function (targetForm, data) {
+    var submitBtn = targetForm.querySelector('.btn');
+
+    landing.setLeadDataParam(data);
+
+
+    submitBtn.disabled = true;
+    landing.sendLead()
+      .fail(function () {
+        submitBtn.disabled = false;
+      });
+  });
+
+  landing.setConditionalSuccessLink([
+    {
+      condition: landing.paramIs('f5', 'equal', 'dem'),
+      params: {
+        prov: 'dem',
+        f12: landing.getParam('f12'),
+        // f15: landing.getParam('f15')
+      }
+    }
+  ]);
+
+
+  function onShowLeadModal(event){
+    var btnTarget = event.relatedTarget;
+    var data = btnTarget.dataset;
+
+    switch(data.cmbFrom){
+      case 'offer':
+        var obj = {};
+
+        if(data.offerType === 'luce') obj.offer = 'enel - Luce 20 Special';
+        if(data.offerType === 'gas') obj.offer = 'enel -  Gas 20 Special';
+
+        landing.setLeadDataParam(obj);
+        break;
+    }
+  }
+
+  function onHiddenLeadModal(event){
+    var form = event.currentTarget.querySelector('form.cmb');
+    if(form) form.reset();
+
+    //reset lead data
+    landing.resetLeadData();
+  }
+</script>
+</body>
+</html>
